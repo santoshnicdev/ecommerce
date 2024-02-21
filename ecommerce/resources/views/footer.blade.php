@@ -1,4 +1,5 @@
-<div class="card-footer text-body-secondary">
-    2 days ago
-  </div>
-  
+<footer class="footer">
+    <div class="container">
+      <span>&copy; 2024 Your Company. All rights reserved.</span>
+    </div>
+  </footer>

@@ -1,7 +1,7 @@
 @extends('master')
 @section('content')
 
-<div class="container">
+<div class="container  bc">
         <div class="row justify-content-center">
             <div class="col-md-4">
                 <form class="login-form">
