@@ -4,8 +4,13 @@
 <div class="container  bc">
         <div class="row justify-content-center">
             <div class="col-md-4">
+
+                <form class="login-form" action="/login" method="POST">
+                @csrf
+
                 <form class="login-form" action="/log" method="post">
                     @csrf
+
                     <h2 class="text-center">Login</h2>
                     <div class="form-group">
                         <label for="email">Email:</label>
