@@ -7,8 +7,9 @@ use Illuminate\Http\Request;
 class ProductController extends Controller
 {
     //
-    public function ind()
+    public function india()
     {
-        return "sucess my love";
+        
+      return "hello india";
     }
 }
