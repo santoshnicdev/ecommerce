@@ -1,21 +1,25 @@
 <?php
 
 namespace App\Http\Controllers;
-use Illuminate\Support\Facades\Hash;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
 
+use Illuminate\Http\Request;
+use App\Models\User;
+use Illuminate\Support\Facades\Hash;
 class UserController extends Controller
 {
-    public function login(Request $req )
+    //login
+    public function login(Request $request)
     {
-        $user= Db::table("user")->where("email", $req->email)->first();
-        if( Hash::check($req->password,$user->password) ) {
-            return  redirect("logged");
-        }
-        else {
-            return "not availble";
-        }
-    
+        
+      $user= User::where("email", $request->email)->first();
+      if(!Hash::check($request->password,$user->password )){
+          $request->session()->put("user",$user); 
+         
+         return redirect('/india');
+          }
+      else
+      {return "love you";}
+      
+    }
 }
-}
+
