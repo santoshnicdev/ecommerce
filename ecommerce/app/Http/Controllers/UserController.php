@@ -22,7 +22,3 @@ class UserController extends Controller
       
     }
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> 9767e8cac331908db070d25adb1a4561e8cd917d
